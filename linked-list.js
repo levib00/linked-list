@@ -1,4 +1,9 @@
-import Node from "./node.js"
+class Node {
+  constructor (value, next = null) { 
+    this.value = value
+    this.next = next
+  }
+}
 
 function LinkedList() {
   let listLength = 0;
@@ -6,7 +11,7 @@ function LinkedList() {
 
   return {
     append(value) {
-      let newNode = new Node(value)
+      const newNode = new Node(value)
       if (!this.headNode) {
         this.headNode = newNode;
         listLength += 1;
@@ -30,7 +35,7 @@ function LinkedList() {
     },
 
     size() {
-      console.log(listLength)
+      return listLength
     },
 
     head() {
