@@ -5,8 +5,3 @@ export default class Node {
   }
 }
 
-const list = new LinkedList()
-list.append('value0')
-list.append('value1')
-list.append('value2')
-list.append('value3')
